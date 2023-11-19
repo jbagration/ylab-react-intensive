@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@100&display=swap');
+
+:root {
+  --main-color: #2961ab;
+  --text-color: #555555;
+  --additional-text-color: #ffffff;
+  --form-placeholder-color: #666666;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  background-image: url('../public/images/background.jpg');
+}

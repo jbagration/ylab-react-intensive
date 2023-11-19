@@ -1,0 +1,49 @@
+.button {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    padding: 15px; 
+    margin-bottom: 20px;
+    color: #fff; 
+    background-color: #2961ab;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    @media (max-width: 430px) {
+        padding: 10px; 
+    }
+
+    border-radius: 8px; 
+
+    &:hover {
+        background-color: #032e55; 
+    }
+
+    &:focus {
+        box-shadow: 0 0 8px 2px rgba(34, 60, 80, 0.2);
+        outline: none;
+    }
+
+    &:active {
+        background-color: #054d8c; 
+    }
+
+    &:disabled {
+        opacity: 0.65;
+        pointer-events: none;
+    }
+}
+
+.loading {
+    position: relative;
+    color: transparent;
+
+    &:after {
+        content: url('../../../../public/images/loader.svg');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
